@@ -4,6 +4,7 @@
 #include "IndexProducer.h"
 #include "Configuration.h"
 #include "MyResult.h"
+#include "Tool.h"
 #include <unistd.h>
 #include <iostream>
 #include <sstream>
@@ -55,30 +56,39 @@ public:
 
         std::priority_queue<MyResult,std::vector<MyResult>,MyCompare> results;
 
-        auto it=str2index.find(_msg);
-        if(it==str2index.end())
+        int characterNum;
+        set<int> cheak_line;
+        vector<string> wordset=Tool::getNumOfchars(_msg,characterNum);
+
+        for(int i=0;i<characterNum;i++)
         {
-            _msg="???";
-            _conn->sendInLoop(_msg);
-            return ;
-        }
-        else
-        {
-            auto line=index[it->second].second;
-            for(auto &i:line)
+            auto it=str2index.find(wordset[i]);
+            if(it==str2index.end())
             {
-                std::stringstream s;
-                s<<words[i].first<<" ";
-                //compute iDist
-                //------
-                //
-                results.push(MyResult(s.str(),words[i].second,0));
+
+            }
+            else
+            {
+                set<int> line=index[it->second].second;
+                for(auto &i:line)
+                {
+                    auto ret=cheak_line.insert(i);
+                    if(ret.second)
+                    {
+                        std::stringstream s;
+                        s<<words[i].first<<" ";
+                        //compute iDist
+                        string temp=s.str(); 
+                        //------
+                        cout<<temp<<":"<<Tool::cac_Dist(_msg,temp)<<std::endl;
+                        results.push(MyResult(temp,words[i].second,Tool::cac_Dist(_msg,temp)));
+                    }
+                }
             }
         }
         //encode
         auto k=zwp::Configuration::getInstance("")->getConfigMap().find("K")->second;  
         int k2i=atoi(k.c_str());
-        std::stringstream ss;
         Json::Value value;
 
         for(int i=0;i<k2i&&results.size();i++)
