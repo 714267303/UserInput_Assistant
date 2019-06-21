@@ -1,0 +1,10 @@
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/china
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/English
+INDEX /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/index/index
+STORE /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/store/store
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0002.txt
+THREADNUM 4
+TASKNUM 10
+IP 192.168.19.128
+PORT 8888
+K 3
