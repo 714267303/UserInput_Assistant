@@ -1,6 +1,7 @@
 #include "TcpServer.h"
 #include "Thread_Pool.h"
 #include "Task.h"
+#include "Mutex.h"
 #include <iostream>
 using namespace std;
 using namespace zwp;
@@ -12,11 +13,21 @@ void disconnectFunc(const TcpConnectionPtr &);
 void sendmsgFunc(const TcpConnectionPtr &);
 
 Thread_Pool *p;
+extern __thread LRUCache *name;
+__thread vector<pair<LRUCache*,Mutex*>> *LRUManager=nullptr;
+
 int main()
 {
     Thread_Pool thread_pool(10,4);
     p=&thread_pool;
+    LRUManager=new vector<pair<LRUCache*,Mutex*>>;
     p->start();
+    sleep(1);
+    for(auto &e:*LRUManager)
+    {
+        cout<<"LRUCache:"<<e.first<<"-----"<<"Mutex:"<<e.second<<endl;
+    }
+    cout<<"LRUCache:"<<name<<"-----"<<"Mutex:"<<_mutex<<endl;
     TcpServer server("192.168.19.128",8888,
                 connectFunc,
                 recvmsgFunc,

@@ -1,11 +1,41 @@
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0002.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0003.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0005.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0007.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0009.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0011.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0013.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0015.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0017.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0019.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0021.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0023.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0025.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0027.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0029.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0031.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0033.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0035.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0037.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0039.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0041.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0043.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0045.txt
+
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/english.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/stop_words_eng.txt
+CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/The_Holy_Bible.txt
+//CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/stop_words_zh.txt
 CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/china
 CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/English
+
 INDEX /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/index/index
 STORE /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/store/store
-CN /home/ubuntu1804/dailyPracticeLink/Linux_WD/project/CPP/UserInput_Assistant/corpus/C3-Art0002.txt
+
 THREADNUM 4
 TASKNUM 10
 IP 192.168.19.128
 PORT 8888
 K 3
 ENCODE 3
+CACHESIZE 10
